@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href= "/public/assets/phones.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <% /* Navbar */ %>
+    <div class = "navbar">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href = "#20">20%</a>
+        <a class="nav-link" href = "#30">30%</a>
+        <a class="nav-link" href = "#50">50%</a>
+    </div>
+    <% /* Navbar */ %>
+   
+   <% /* Apple */ %>
+   <div class ="flex-container">
+        <div class = "flex-text" id = "20">20% sales</div>
+        <img src = "../images/20.png" alt = "20% image discount" class = "flex-image">
+   </div> 
+   <div class = "grid-container">      
+        <div class="custom-card">
+            <img src="../images/tabs8plus.jpg" alt="Card Image" class="card-image">
+             <h3 class="card-heading">Samsung Galaxy Tab S8, 11 inch, 128gb White</h3>
+            <p class="card-content"><del>$1100</del> <span class="new-price">$640</span></p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="20">
+                <button class="divbutton">Buy</button>
+            </form>
+        </div> 
+        <div class="custom-card">
+            <img src="../images/legion5.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Lenovo Legion 5, AMD Ryzen™ 7 5800H, GeForce RTX 3060 6GB, 16gb ram, 1TB ssd</h3>
+            <p class="card-content"><del>$1100</del> <span class="new-price">$880</span></p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="34">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>       
+         <div class="custom-card">
+            <img src="../images/iphone12.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Iphone 12, 64gb, Black</h3>
+            <p class="card-content"><del>$600</del> <span class="new-price">$480</span></p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="4">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+    </div>  
+    <% /* Apple */ %>
+
+    <% /* Samsung */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "30">30% Sales</div>
+        <img src = "../images/30.png" alt = "30% image discount" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/pixel7.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Google Pixel 7a, 128gb, Green</h3>
+             <p class="card-content"><del>$500</del> <span class="new-price">$350</span></p>
+             <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="11">
+                <button class="divbutton">Buy</button>
+            </form>
+        </div>
+        <div class="custom-card">
+            <img src="../images/magicmouse.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Apple Magic Mouse</h3>
+            <p class="card-content"><del>$79</del> <span class="new-price">$55</span></p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="44">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>  
+    </div>  
+    <% /* 30% */ %>
+
+    <% /* 50% */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "50">50% Sales</div>
+        <img src = "../images/50.png" alt = "50% image discount" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+    <div class="custom-card">
+        <img src="../images/rogkeyboard.png" alt="Card Image" class="card-image">
+        <h3 class="card-heading">Asus Rog Keyboard</h3>
+        <p class="card-content"><del>$79</del> <span class="new-price">$39</span></p>
+        <form action="/buy-acc" method="POST" class="styled-form">
+            <input type="hidden" name="phoneId" value="43">
+            <button class="divbutton">Buy</button>
+        </form>
+     </div>        
+     <div class="custom-card">
+        <img src="../images/popmouse.jpg" alt="Card Image" class="card-image">
+        <h3 class="card-heading">Logitech POP Mouse</h3>
+        <p class="card-content"><del>$39</del> <span class="new-price">$20</span></p>
+        <form action="/buy-acc" method="POST" class="styled-form">
+            <input type="hidden" name="phoneId" value="45">
+            <button class="divbutton">Buy</button>
+        </form>
+     </div>
+     <div class="custom-card">
+        <img src="../images/freebuds.jpg" alt="Card Image" class="card-image">
+        <h3 class="card-heading">Huawei Freebuds 5i</h3>
+        <p class="card-content"><del>$129</del> <span class="new-price">$65</span></p>
+        <form action="/buy-acc" method="POST" class="styled-form">
+            <input type="hidden" name="phoneId" value="39">
+            <button class="divbutton">Buy</button>
+        </form>
+     </div>       
+    </div>  
+    <% /* Google */ %>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../scripts/phonescript.js"></script>
+</html>

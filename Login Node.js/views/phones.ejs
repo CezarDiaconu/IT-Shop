@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href= "/public/assets/phones.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <% /* Navbar */ %>
+    <div class = "navbar">
+        <a  href="#">Home</a>
+        <a class="nav-link" href = "#apple">Apple</a>
+        <a class="nav-link" href = "#samsung">Samsung</a>
+        <a class="nav-link" href = "#google">Google</a>
+    </div>
+    <% /* Navbar */ %>
+   
+   <% /* Apple */ %>
+   <div class ="flex-container">
+        <div class = "flex-text" id = "apple">Apple</div>
+        <img src = "../images/apple.png" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/iphone14promax.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Iphone 14 Pro Max, 128gb, Deep Purple</h3>
+            <p class="card-content">1200$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="0">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/iphone14pro.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Iphone 14 Pro, 128gb, Silver</h3>
+            <p class="card-content">1000$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="1">
+                <button class="divbutton">Buy</button>
+            </form>
+        </div>
+         <div class="custom-card">
+            <img src="../images/iphone14.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Iphone 14, 128gb, Black</h3>
+            <p class="card-content">800$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="2">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/iphone13.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Iphone 13, 128gb, Blue</h3>
+            <p class="card-content">700$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="3">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/iphone12.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Iphone 12, 64gb, Black</h3>
+            <p class="card-content">600$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="4">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/iphonese3.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Iphone SE3, 128gb, White</h3>
+            <p class="card-content">400$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="5">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+    </div>  
+    <% /* Apple */ %>
+
+    <% /* Samsung */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "samsung">Samsung</div>
+        <img src = "../images/samsung.png" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/galaxys23ultra.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Samsung Galaxy S23 Ultra, 256gb, 12gb ram, Green</h3>
+            <p class="card-content">1200$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="6">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/galaxys23plus.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Samsung Galaxy S23 Plus, 128gb, 8gb ram, White</h3>
+            <p class="card-content">1000$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="7">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/galaxys23.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Samsung Galaxy S23, 128gb, 8gb ram, Purple</h3>
+            <p class="card-content">800$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="8">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>       
+    </div>  
+    <% /* Samsung */ %>
+
+    <% /* Google */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "google">Google</div>
+        <img src = "../images/google.png" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/pixel7pro.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Google Pixel 7 Pro, 128gb, Dark Green</h3>
+            <p class="card-content">800$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="9">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/pixel7.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Google Pixel 7, 128gb, Green</h3>
+            <p class="card-content">600$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="10">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/pixel7.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Google Pixel 7a, 128gb, Green</h3>
+            <p class="card-content">500$</p>
+            <form action="/buy-phone" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="11">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+    </div>  
+    <% /* Google */ %>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../scripts/phonescript.js"></script>
+</html>

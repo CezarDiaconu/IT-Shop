@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href= "/public/assets/phones.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <% /* Navbar */ %>
+    <div class = "navbar" id = "navbar">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href = "#apple">Apple</a>
+        <a class="nav-link"href = "#samsung">Samsung</a>
+        <a class="nav-link"href = "#huawei">Huawei</a>
+    </div>
+    <% /* Navbar */ %>
+   
+   <% /* Apple */ %>
+   <div class ="flex-container">
+        <div class = "flex-text" id = "apple">Apple</div>
+        <img src = "../images/apple.png" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/ipadpro12.9.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Ipad pro m2, 12.9 inch, 128gb, Space Gray/Silver</h3>
+            <p class="card-content">1100$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="12">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/ipadpro11.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Ipad pro m2, 11 inch, 128gb, Space Gray/Silver</h3>
+            <p class="card-content">800$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="13">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/ipadairm1.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Ipad air m1, 10.9 inch, 64gb, Blue </h3>
+            <p class="card-content">600$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="14">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/ipad10.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Ipad 10, 10.9 inch, 64gb, Pink</h3>
+            <p class="card-content">450$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="15">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/ipad9.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Ipad 9, 10.2 inch, 64gb, Space Gray/Silver</h3>
+            <p class="card-content">329$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="16">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/ipadmini6.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Ipad mini 6, 8.3 inch, 64gb, Space Gray/Pink/Purple/Starlight </h3>
+            <p class="card-content">500$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="17">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+    </div>  
+    <% /* Apple */ %>
+
+    <% /* Samsung */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "samsung">Samsung</div>
+        <img src = "../images/samsung.png" alt = "Samsung image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/tabs8ultra.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Samsung Galaxy Tab S8 Ultra, 14.6 inch, 256gb, Black</h3>
+            <p class="card-content">1200$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="18">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/tabs8plus.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Samsung Galaxy Tab S8 Plus, 12.4 inch, 128gb, Black</h3>
+            <p class="card-content">1000$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="19">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/tabs8plus.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Samsung Galaxy Tab S8, 11 inch, 128gb White</h3>
+            <p class="card-content">800$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="20">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>       
+    </div>  
+    <% /* Samsung */ %>
+
+    <% /* Huawei */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "huawei">Huawei</div>
+        <img src = "../images/huawei.png" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/matepad11pro.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Huawei Matepad 11 pro, 128gb, Black</h3>
+            <p class="card-content">400$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="21">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/matepad11air.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Huawei Matepad 11 air, 128gb, Black</h3>
+            <p class="card-content">300$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="22">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/matepad11.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Huawei Matepad 11 , 128gb, Black</h3>
+            <p class="card-content">200$</p>
+            <form action="/buy-tablet" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="23">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+    </div>  
+    <% /* Google */ %>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../scripts/phonescript.js"></script>
+</html>

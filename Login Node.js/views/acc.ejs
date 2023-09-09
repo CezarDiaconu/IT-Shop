@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href= "/public/assets/phones.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <% /* Navbar */ %>
+    <div class = "navbar">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href = "#headphones">Headphones</a>
+        <a class="nav-link" href = "#keyboards">Keyboards</a>
+        <a class="nav-link" href = "#mice">Mice</a>
+    </div>
+    <% /* Navbar */ %>
+   
+   <% /* Headphones */ %>
+   <div class ="flex-container">
+        <div class = "flex-text" id = "headphones">Headphones</div>
+        <img src = "../images/airpods2.jpg" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/airpodspro.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Apple Airpods Pro (2nd generation) </h3>
+            <p class="card-content">249$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="35">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/airpods3.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Apple Airpods (3rd generation)</h3>
+            <p class="card-content">179$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="36">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/airpods2.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Apple Airpods (2nd generation)</h3>
+            <p class="card-content">129$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="37">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/budspro.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Samsung Galaxy Buds Pro</h3>
+            <p class="card-content">159$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="38">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/freebuds.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Huawei Freebuds 5i</h3>
+            <p class="card-content">129$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="39">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>       
+    </div>  
+    <% /* Headphones */ %>
+
+    <% /* Keyboards */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "keyboards">Keyboards</div>
+        <img src = "../images/magickeyboard.jpg" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/ipadkeyboard.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Apple Ipad Magic Keyboard</h3>
+            <p class="card-content">300$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="40">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/magickeyboard.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Apple Magic Keyboard</h3>
+            <p class="card-content">129$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="41">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/popkeyboard.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Logitech POP Mechanical Wireless Keyboard</h3>
+            <p class="card-content">79$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="42">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div> 
+         <div class="custom-card">
+            <img src="../images/rogkeyboard.png" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Asus Rog Keyboard</h3>
+            <p class="card-content">79$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="43">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>           
+    </div>  
+    <% /* Keyboards */ %>
+
+    <% /* Mice */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "mice">Mice</div>
+        <img src = "../images/magicmouse.jpg" alt = "Mouse image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/magicmouse.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Apple Magic Mouse</h3>
+            <p class="card-content">79$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="44">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/popmouse.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Logitech POP Mouse</h3>
+            <p class="card-content">39$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="45">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/xenon200.png" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Mouse Xenon 200</h3>
+            <p class="card-content">20$</p>
+            <form action="/buy-acc" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="46">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+    </div>  
+    <% /* Mice */ %>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../scripts/phonescript.js"></script>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id = "home">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href= "/public/assets/phones.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <% /* Navbar */ %>
+    <div class = "navbar">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href = "#apple">Apple</a>
+        <a class="nav-link" href = "#asus">Asus</a>
+        <a class="nav-link" href = "#lenovo">Lenovo</a>
+    </div>
+    <% /* Navbar */ %>
+   
+   <% /* Apple */ %>
+   <div class ="flex-container">
+        <div class = "flex-text" id = "apple">Apple</div>
+        <img src = "../images/apple.png" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/macbookpro1416.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Macbook Pro m2 pro, 16 inch, 16gb ram, 512gb ssd, Silver</h3>
+            <p class="card-content">2400$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="24">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/macbookpro1416.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Macbook Pro m2 pro, 14.2 inch, 16gb ram, 512gb ssd, Silver</h3>
+            <p class="card-content">2000$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="25">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/macbookpro13.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Macbook Pro m2, 13.3 inch, 8gb ram, 256gb ssd, Silver</h3>
+            <p class="card-content">1300$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="26">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/macbookairm2.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Macbook Air m2, 13.7 inch, 8gb ram, 256gb ssd, Silver</h3>
+            <p class="card-content">1200$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="27">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/macbookairm1.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Macbook air m1, 13.3 inch, 8gb ram, 256gb ssd, Silver</h3>
+            <p class="card-content">1000$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="28">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+    </div>  
+    <% /* Apple */ %>
+
+    <% /* Asus */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "asus">Asus</div>
+        <img src = "../images/asus.png" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/zephyrusg16.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Asus Rog Zephyrus G16, i9-13900H, NVIDIA® GeForce RTX™ 4070, 16gb ram, 1TB ssd </h3>
+            <p class="card-content">2200$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="29">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/zephyrusg14.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Asus Rog Zephyrus G14, i9-13900H, NVIDIA® GeForce RTX™ 4070, 16gb ram, 1TB ssd</h3>
+            <p class="card-content">2000$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="30">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/strixg17.png" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Asus Rog Strix G17, i9-13900H, NVIDIA® GeForce RTX™ 4070, 16gb ram, 1TB ssd</h3>
+            <p class="card-content">2000$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="31">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/flowz13.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Asus Rog Flow Z13, i7-13800HS, 16gb ram, 256gb ssd</h3>
+            <p class="card-content">1300$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="32">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>            
+    </div>  
+    <% /* Asus */ %>
+
+    <% /* Lenovo */ %>
+    <div class ="flex-container">
+        <div class = "flex-text" id = "lenovo">Lenovo</div>
+        <img src = "../images/lenovo.png" alt = "Apple image" class = "flex-image">
+   </div> 
+   <div class = "grid-container">
+        <div class="custom-card">
+            <img src="../images/legion5pro.jpeg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Lenovo Legion 5 Pro, AMD Ryzen™ 7 5800H, GeForce RTX 3070 8GB, 16gb ram, 1TB ssd</h3>
+            <p class="card-content">1300$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="33">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>
+         <div class="custom-card">
+            <img src="../images/legion5.jpg" alt="Card Image" class="card-image">
+            <h3 class="card-heading">Lenovo Legion 5, AMD Ryzen™ 7 5800H, GeForce RTX 3060 6GB, 16gb ram, 1TB ssd</h3>
+            <p class="card-content">1100$</p>
+            <form action="/buy-laptop" method="POST" class="styled-form">
+                <input type="hidden" name="phoneId" value="34">
+                <button class="divbutton">Buy</button>
+            </form>
+         </div>       
+    </div>  
+    <% /* Lenovo */ %>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../scripts/phonescript.js"></script>
+</html>

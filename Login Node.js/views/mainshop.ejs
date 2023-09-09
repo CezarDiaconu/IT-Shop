@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href= "/public/assets/mainshop.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   <% /* Navbar */ %>
+   <div class="navbar">
+    <a class="nav-link" href="#home">Home</a>
+    <a class="nav-link" href="#items">Products</a>
+    <a class="nav-link" href="#sales">Special Offers</a>
+    <a class="nav-link" href="#about-us">About us</a>
+    <a class="nav-link" href="#endbar">Contact us</a>
+</div>
+    <% /* Navbar */ %>
+    
+     <% /* Account */ %>
+        <h1>Welcome to IT Shop!</h1>
+        <div class = "account" id = "home">
+            <div class="user-box">
+                <h2>Hello <%= user.name.split(' ').map(name => name.charAt(0).toUpperCase() + name.slice(1)).join(' ') %></h2>
+                <form action="/" method="GET" class="styled-form">
+                    <button class = "round-button">Log Out</button>
+                </form>
+            </div>
+        </div>  
+     <% /* Account */ %>
+
+        <% /* Items */ %>
+        <h1>What type of product are you looking for?</h1>
+        <div class="items-grid" id = "items">
+            <div class="image-container" id="phones">
+                <div class="image-wrapper">
+                    <img src="../images/phones.jpg" class="image" alt="Phones">
+                    <form action="/phones" method="GET" class="styled-form">
+                        <button class="divbutton">Buy Phones</button>
+                    </form>
+                </div>
+            </div>
+          
+            <div class="image-container" id="tablets">
+                <div class="image-wrapper">
+                    <img src="../images/ipads.jpeg" class="image" alt="Tablets">
+                    <form action="/tablets" method="GET" class="styled-form">
+                        <button name="buyTablets" class="divbutton">Buy Tablets</button>
+                    </form>
+                </div>
+            </div>
+            <div class="image-container" id="laptops">
+                <div class="image-wrapper">
+                    <img src="../images/laptops.jpg" class="image" alt="Laptops">
+                    <form action="/laptops" method="GET" class="styled-form">
+                        <button name="buyLaptops" class="divbutton">Buy Laptops</button>
+                    </form>
+                </div>
+            </div>
+            <div class="image-container" id="accesories">
+                <div class="image-wrapper">
+                    <img src="../images/accesories.jpg" class="image" alt="Accessories">
+                    <form action="/acc" method="GET" class="styled-form">
+                        <button name="buyAccesories" class="divbutton">Buy Accesories</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+        <% /* Items */ %>
+
+   <% /* Sales */ %>
+   <h1>Check our amaizing deals right here!</h1>
+    <div class = "sales-container" id = "sales">
+        <div class = "salesimage" id = "image20">
+            <img src = "../images/20.png" alt="IT shop image" class="procent"></img>
+            <form action="/sales" method="GET" class="styled-form">
+                 <button class="divbutton">20% sales</button>
+             </form>
+        </div>
+        <div class = "salesimage" id = "image30">
+            <img src = "../images/30.png" alt="IT shop image" class="procent"></img>
+            <form action="/sales" method="GET" class="styled-form">
+                <button class="divbutton">30% sales</button>
+            </form>
+        </div>
+        <div class = "salesimage" id = "image50">
+             <img src = "../images/50.png" alt="IT shop image" class="procent"></img>
+             <form action="/sales" method="GET" class="styled-form">
+                <button class="divbutton">50% sales</button>
+             </form>
+        </div>
+    </div>
+    <% /* Sales */ %>
+   
+      <% /* About us */ %>
+    <div class = "container" id = "about-us">
+        <img src = "../images/IT-Shop.png" alt="IT shop image" class = "shopimage"></img>
+        <div class = "text1">Why IT Shop?<br><br>
+                            -Small prices<br>
+                            -Secure payments<br>
+                            -Fast product delivery<br>
+        </div>   
+    </div>
+
+    <div class = "flex-slider">
+        <div class = "text-slider">Haven't convinced you yet?<br>
+                                    Take a look at what our customers say!
+        </div>
+        <section aria-label="Newest Photos">
+        <div class = "carousel" data-carousel>
+            <button class = "carousel-button prev" data-carousel-button = "prev">&#8656;</button>
+            <button class = "carousel-button next" data-carousel-button = "next">&#8658;</button>
+            <ul data-slides>
+                <li class = "slide" data-active>
+                    <img src = "../images/review1.png">
+                </li>
+                <li class = "slide">
+                    <img src = "../images/review2.png">
+                </li>
+                <li class = "slide">
+                    <img src = "../images/review3.png">
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+    <% /* About us */ %>
+    
+    
+    <% /* Endbar */ %>
+    <h1> You can find us here!</h1>
+    <div class = "endbar" id = "endbar">
+        <a href="https://www.linkedin.com/in/cezar-diaconu-b3582b225/" id="Linkedin">
+        <img src="../images/Linkedin.png" class="web" alt="Linkedin">
+        </a>
+        <a href="https://github.com/CezarDiaconu" id="Github">
+        <img src="../images/Github.png" class="web" alt="Github">
+        </a>
+        <a href="https://www.instagram.com/cezar_diaconu/" id="Instagram">
+        <img src="../images/Instagram.png" class="web" alt="Instagram">
+        </a>
+    </div>
+    <% /* Endbar */ %>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../scripts/mainshopscript.js"></script>
+</html>
